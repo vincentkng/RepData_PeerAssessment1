@@ -36,7 +36,7 @@ total_steps_by_date <- rename(total_steps_by_date, c("x"="Total_Steps"))
 ggplot(total_steps_by_date, aes(x=Total_Steps)) + geom_histogram(binwidth=1000, fill="dodgerblue", color="black") +
     labs(x="Total number of steps taken", title="Histogram of the total number of steps taken each day")
 
-#Mean total number of steps taken per day
+#Mean number of steps taken per day
 mean(total_steps_by_date$Total_Steps, na.rm=TRUE)
 
 #Median number of steps taken per day

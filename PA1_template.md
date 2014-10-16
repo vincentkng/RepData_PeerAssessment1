@@ -41,7 +41,7 @@ ggplot(total_steps_by_date, aes(x=Total_Steps)) + geom_histogram(binwidth=1000, 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 ```r
-#Mean total number of steps taken per day
+#Mean number of steps taken per day
 mean(total_steps_by_date$Total_Steps, na.rm=TRUE)
 ```
 
